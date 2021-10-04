@@ -1,0 +1,28 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+int main()
+{
+    vector<double> a;
+    
+    int n; //stopień wielomianu
+    
+    cout << "Okresl stopien wielomianu:" << endl;
+    cin >> n;
+    
+    for (int i=0;i<=n;i++){
+        cout << "Podaj wspołczynnik stojacy przy potedze:" << n-i << endl;
+        double y;
+        a.push_back(y);
+    }
+    double x;
+    cout << "Podaj 'x', dla którego wyznaczyc wartosc wielomianu:" << endl;
+    cin >> x;
+    double w=a[0];
+    for (int i=1;i<=n;i++){
+     double w=w*x+a[i];   
+    }
+    
+cout << "Wynik dzialania: " << w << endl;
+}
